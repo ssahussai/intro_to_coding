@@ -73,7 +73,12 @@
 <script>
   function sayHello(){
     var yourName = prompt('Hello, I am Daniel, what is your name?')
+    if(yourName){
     alert('Hello, '+ yourName+ '! it is a pleasure to meet you!')
+    } else {
+      alert('Please re-enter your name')
+      sayHello()
+    }
   }
 </script>
 </body>
