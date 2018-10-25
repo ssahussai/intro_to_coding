@@ -2,4 +2,4 @@
 
 This is what we'll be building today!
 
-![landing Page Prototype](imgs/screenshot.png)
+![landing Page Prototype](imgs/screen_shot.png)
