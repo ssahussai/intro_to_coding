@@ -1,6 +1,6 @@
-# ![GA-Cog](https://avatars2.githubusercontent.com/u/42252722?s=200&v=4) Welcome to the SXSW & GA Edition of Intro to Coding 
+# ![GA-Cog](https://avatars2.githubusercontent.com/u/42252722?s=200&v=4) Welcome Intro to Coding - HTML & CSS!
 
-This is what we'll be building today!
+Here's what we'll build today!
 
 ![landing Page Prototype](imgs/screen_shot.png)
 
