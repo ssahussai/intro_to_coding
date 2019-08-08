@@ -7,10 +7,12 @@
 
   body {
     text-align: center;
-    background: url("imgs/austin_skyline.jpg");
+    background: url("imgs/dallas_skyline.png");
     background-size: cover;
-    color: white;
-    font-size: 25px;
+    background-position: center;
+    color: red;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
     font-family: Helvetica;
   }
 
@@ -18,7 +20,7 @@
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    border: 3px solid black;
+    border: 3px solid red;
   }
 
   #content {
@@ -27,7 +29,7 @@
     height: 600px;
     background-color: gray;
     border-radius: 5%;
-    border: 3px solid black;
+    border: 3px solid red;
     padding-top: 75px;
     opacity: .9;
   }
@@ -40,11 +42,24 @@
   #facts ol {
     text-align: left;
   }
+
+  #facts p {
+    font-size: 15px;
+  }
+
+  button {
+    color: white;
+    font-size: .7em;
+    background-color: red;
+    width: 10em;
+    padding: 1em;
+    border-radius: 5px;
+  }
 </style>
 </head>
 <body>
   <div id="content">
-    <img src="./imgs/profile_pic.jpg" alt="Daniel's Profile Picture">
+    <img src="./imgs/profile.jpg" alt="Daniel's Profile Picture">
     <h3>Hello, I'm Daniel, a Dallas Based Software Engineer</h3>
     <p>Here's some fun facts about me</p>
     <div id="facts">
@@ -53,8 +68,22 @@
         <li>I Love Coffee</li>
         <li>I Love to Code</li>
       </ol>
+      <p>The current date is</p>
+      <p id="date"></p>
+      <button onclick="sayHello()">Say Hello</button>
     </div>
   </div>
+  <script>
+    document.querySelector('#date').textContent = new Date().toDateString()
+    function sayHello() {
+      var name = prompt("Hello, my name is Daniel, what's your name?");
+      if(name) {
+        alert("Hello " + name + ", nice to meet you!");
+      } else {
+        alert("Please enter your name");
+        sayHello();
+      }
+    }
+  </script>
 </body>
-
 </html>
